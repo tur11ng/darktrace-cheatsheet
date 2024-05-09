@@ -27,43 +27,43 @@
 
 ### Resource Development
 
-Initial Access
+### Initial Access
 
 * Brute force
 
-Execution
+### Execution
 
-Privilege Escalation
+### Privilege Escalation
 
 * New Admin
 * Password Change
 * New Credential
 * Brute force
 
-Defense Evasion
+### Defense Evasion
 
-Credential Access
+### Credential Access
 
-Discovery
+### Discovery
 
 * Network Scan
 * Enumeration
 
-Lateral Movement
+### Lateral Movement
 
 * Unusual SMB Script Write
 
-Collection
+### Collection
 
-Command and Control
+### Command and Control
 
-Exfiltration
+### Exfiltration
 
 * Large Data Volume
 * Large Volume
 * High Volume
 
-Impact
+### Impact
 
 
 
