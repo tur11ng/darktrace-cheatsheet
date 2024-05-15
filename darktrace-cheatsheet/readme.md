@@ -22,6 +22,12 @@ description: >-
 @fields.uid:*01 OR @fields.uid:*02
 ```
 
+* Blocked traffic by Respond
+
+```
+@type:conn AND (@fields.history:*g* OR @fields.history:*G*)
+```
+
 ## Compliance
 
 ### Misconfigurations
