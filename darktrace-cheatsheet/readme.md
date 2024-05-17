@@ -91,6 +91,14 @@ description: >-
 <pre data-overflow="wrap"><code><strong>@fields:ssl AND @fields.cipher:"TLS_RSA_EXPORT_WITH_RC4_40_MD5 OR TLS_RSA_WITH_RC4_128_MD5 OR TLS_RSA_WITH_RC4_128_SHA OR TLS_RSA_WITH_DES_CBC_SHA OR TLS_RSA_WITH_3DES_EDE_CBC_SHA OR TLS_RSA_WITH_AES_128_CBC_SHA OR TLS_DH_RSA_WITH_AES_128_CBC_SHA OR TLS_DH_anon_WITH_RC4_128_MD5 OR TLS_DH_anon_WITH_AES_128_CBC_SHA OR TLS_DH_anon_EXPORT_WITH_RC4_40_MD5 OR SSL_RSA_WITH_RC4_128_MD5 OR SSL_RSA_WITH_RC4_128_SHA OR SSL_RSA_WITH_DES_CBC_SHA OR SSL_RSA_WITH_3DES_EDE_CBC_SHA OR SSL_RSA_WITH_AES_128_CBC_SHA OR SSL_DH_RSA_WITH_AES_128_CBC_SHA OR SSL_DH_anon_WITH_RC4_128_MD5 OR SSL_DH_anon_WITH_AES_128_CBC_SHA OR SSL_DH_anon_EXPORT_WITH_RC4_40_MD5"
 </strong></code></pre>
 
+* Internal Plaintext HTTP traffic
+
+{% code overflow="wrap" %}
+```
+@type:conn AND @fields.local_resp:true AND @fields.local_orig:true AND (@fields.dest_port:(80 OR 8080 OR 8000 OR 8008) OR @fields.source_port:(80 OR 8080 OR 8000 OR 8008)) AND NOT @fields.service:ssl
+```
+{% endcode %}
+
 ### Remote Desktop Services
 
 * TeamViewer
@@ -238,9 +246,11 @@ kali OR metasploit
 
 * SMB Scripts
 
+{% code overflow="wrap" %}
 ```
-@fields.filename:( /..ps.1/ OR /..cmd./ OR /..py./ )
+@fields.filename: (*.ps1 OR *.cmd OR *.py* OR *.bat OR *.pl OR *.vbs OR *.wbs)
 ```
+{% endcode %}
 
 * Service Control Activity
 
