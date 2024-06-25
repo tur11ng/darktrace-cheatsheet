@@ -6,7 +6,7 @@ description: DarkTrace Model Editor Cheatsheet, for creating and fine tuning you
 
 ### Creation
 
-#### Tips&#x20;
+#### Tips
 
 * Always disable auto suppress for new models.
 * Always set the Breach Priority to "Informational" for new models.
@@ -26,7 +26,7 @@ description: DarkTrace Model Editor Cheatsheet, for creating and fine tuning you
 * By **Domain**
   * Useful if the domain is rare, but it is considered legit for our purposes.
   * Configure Trusted Domains.
-  * Use [https://\<darktrace\_hostname>/status?hostname=google.com](https://<darktrace_hostname>/status?hostname=google.com) lookup hostname scores from the internal Darktrace database.
+  * Use [https://\<darktrace\_hostname>/status?hostname=google.com](https:/%3Cdarktrace\_hostname%3E/status) lookup hostname scores from the internal Darktrace database.
 
 ### Breach importance
 
