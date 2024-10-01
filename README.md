@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Threat Visualizer Cheatsheet
 
 ## Breach Review Methodology

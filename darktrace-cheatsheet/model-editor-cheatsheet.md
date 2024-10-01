@@ -1,5 +1,6 @@
 ---
 description: DarkTrace Model Editor Cheatsheet, for creating and fine tuning your models.
+hidden: true
 ---
 
 # Model Editor Cheatsheet

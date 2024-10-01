@@ -117,6 +117,12 @@ description: >-
 ```
 {% endcode %}
 
+* ScreenConnect
+
+```
+@fields.dest_port:(8040 8041) OR @fields.src_port:(8040 8041)
+```
+
 * VNC
 
 {% code overflow="wrap" %}
